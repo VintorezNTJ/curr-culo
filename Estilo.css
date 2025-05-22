@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+body 
+{ /*altera a cor de fundo*/
+    background-color: #bff3df;
+    text-align:center;
+    background-image: url("https//t.ctcdn.com.br/dK9krJthB3a104-n-qMPzka_xZg=/549x124:1381x593/640x360/smart/i257893.jpeg");
+    background-size: auto;
+    font-family: "Tektur", sans-serif;
+}
+    
+    
+
+    section{
+        background-color: rgb(95, 95, 95);
+        width: 500px;
+        margin: auto;
+        border-radius: 30px;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+
+}
+@keyframes animacao {
+    0% {box-shadow: 2px 2px 8px rgb(63, 63, 63);}
+    25% {box-shadow: 2px 2px 8px purple;}
+    50% {box-shadow: 2px 2px 8px yellow;}
+    75% {box-shadow: 2px 2px 8px rgb(255, 0, 0);}
+    100% {box-shadow: 2px 2px 8px blue;}
+    
+}
+    .Titulo{
+        color: rgb(0, 0, 0);
+    }
+        #perfil{
+        border-radius: 10px;
+        width: 600px;
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 10px 10px 10px grey;
+        
+        
+        }
+
+section:hover{
+        background-color: rgba(255, 255, 255, 0);
+        transition: 1s;
+        animation: animacao 5s ease-in-out infinite;
+    
+}
+.menu ul{
+    margin: 0px;
+}
+.menu{
+    background-color: black; /*cor de fundo do menu*/
+    border-radius: 15px;       /*arredondar bordas do menu*/
+    height: 60px;
+}
+/*deixar lista lado a lado*/
+.menu ul li {
+    display: inline-block;     /*colocar opções da lista do menu lado a lado*/
+    padding: 10px;             /*espaçamento interno*/
+    width: 190px;              /*largura do botão do menu*/
+}
+.menu ul li a {
+    color: white;           /*cor de letra*/
+    text-decoration: none;    /*decoração de link desativada*/
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.celular{
+    /*desapareça o icone menu na versão desktop*/
+    display: none;
+}
+/*definindo configuração do modo celular*/
+@media(max-width: 1050px){
+    .menu ul {
+        display: none; /*desaparece lista do menu*/
+    }
+    .celular{
+        display: block; /*aparece menu hamburguer do celular*/
+        text-align: left;
+        padding: 8px;
+    }
+    ul.mostraMenu {
+            display: inline-block;
+    }
+}
